@@ -1,0 +1,17 @@
+~/master_thesis/evaluation/lm-evaluation-harness ~/master_thesis/evaluation/lm-evaluation-harness/slurm_scripts
+Evaluating model: 
+Selected Tasks: ['wsc273', 'logiqa', 'lambada_openai', 'truthfulqa_gen', 'winogrande', 'sciq', 'hellaswag', 'openbookqa', 'triviaqa', 'piqa', 'toxigen', 'mnli', 'arc_challenge', 'arc_easy']
+Traceback (most recent call last):
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/main.py", line 108, in <module>
+    main()
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/main.py", line 79, in main
+    results = evaluator.simple_evaluate(
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/utils.py", line 182, in _wrapper
+    return fn(*args, **kwargs)
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/evaluator.py", line 64, in simple_evaluate
+    lm = lm_eval.models.get_model(model).create_from_arg_string(
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/base.py", line 114, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/models/gpt2.py", line 23, in __init__
+    assert isinstance(pretrained, str)
+AssertionError

@@ -1,0 +1,133 @@
+{
+  "results": {
+    "wsc273": {
+      "acc": 0.5494505494505495,
+      "acc_stderr": 0.030168317231083496
+    },
+    "sciq": {
+      "acc": 0.777,
+      "acc_stderr": 0.013169830843425684,
+      "acc_norm": 0.66,
+      "acc_norm_stderr": 0.014987482264363937
+    },
+    "mnli": {
+      "acc": 0.3384615384615385,
+      "acc_stderr": 0.004776493430213428
+    },
+    "hellaswag": {
+      "acc": 0.2900816570404302,
+      "acc_stderr": 0.004528723951878258,
+      "acc_norm": 0.31597291376219877,
+      "acc_norm_stderr": 0.004639520453444027
+    },
+    "piqa": {
+      "acc": 0.6229597388465724,
+      "acc_stderr": 0.011307569752543904,
+      "acc_norm": 0.6158868335146899,
+      "acc_norm_stderr": 0.011348160741479136
+    },
+    "lambada_openai": {
+      "ppl": 33.445057671240654,
+      "ppl_stderr": 1.3291107279164742,
+      "acc": 0.3654182029885504,
+      "acc_stderr": 0.006708894565239277
+    },
+    "triviaqa": {
+      "acc": 0.009900114912048086,
+      "acc_stderr": 0.0009308719086551582
+    },
+    "arc_challenge": {
+      "acc": 0.19539249146757678,
+      "acc_stderr": 0.011586907189952911,
+      "acc_norm": 0.24744027303754265,
+      "acc_norm_stderr": 0.012610352663292673
+    },
+    "logiqa": {
+      "acc": 0.22887864823348694,
+      "acc_stderr": 0.01647810727631328,
+      "acc_norm": 0.2565284178187404,
+      "acc_norm_stderr": 0.01712944332788756
+    },
+    "arc_easy": {
+      "acc": 0.4739057239057239,
+      "acc_stderr": 0.010245801990240054,
+      "acc_norm": 0.41708754208754206,
+      "acc_norm_stderr": 0.010117738967781974
+    },
+    "openbookqa": {
+      "acc": 0.192,
+      "acc_stderr": 0.017632180454360977,
+      "acc_norm": 0.308,
+      "acc_norm_stderr": 0.020667032987466104
+    },
+    "winogrande": {
+      "acc": 0.4964483030781373,
+      "acc_stderr": 0.014052131146915867
+    },
+    "toxigen": {
+      "acc": 0.5670212765957446,
+      "acc_stderr": 0.016169632869640304,
+      "acc_norm": 0.4308510638297872,
+      "acc_norm_stderr": 0.016160089171486036
+    },
+    "truthfulqa_gen": {
+      "bleurt_max": -1.1011366257615014,
+      "bleurt_max_stderr": 0.012841069724716617,
+      "bleurt_acc": 0.543451652386781,
+      "bleurt_acc_stderr": 0.017437280953183688,
+      "bleurt_diff": 0.0984341737060754,
+      "bleurt_diff_stderr": 0.01463398555678893,
+      "bleu_max": 9.388738928961212,
+      "bleu_max_stderr": 0.4514072687756061,
+      "bleu_acc": 0.3929008567931457,
+      "bleu_acc_stderr": 0.017097248285233065,
+      "bleu_diff": 1.6758757709131653,
+      "bleu_diff_stderr": 0.4295954627906996,
+      "rouge1_max": 30.882676197877892,
+      "rouge1_max_stderr": 0.7624138752018889,
+      "rouge1_acc": 0.4173806609547124,
+      "rouge1_acc_stderr": 0.017262891063272168,
+      "rouge1_diff": 2.6568228703193397,
+      "rouge1_diff_stderr": 0.8768518706148769,
+      "rouge2_max": 12.679550213538949,
+      "rouge2_max_stderr": 0.7886592341349958,
+      "rouge2_acc": 0.17503059975520197,
+      "rouge2_acc_stderr": 0.013302425369696388,
+      "rouge2_diff": 1.8075525541192057,
+      "rouge2_diff_stderr": 0.7873334900472455,
+      "rougeL_max": 29.124591632758865,
+      "rougeL_max_stderr": 0.7521090736156384,
+      "rougeL_acc": 0.423500611995104,
+      "rougeL_acc_stderr": 0.01729742144853474,
+      "rougeL_diff": 3.146214019210774,
+      "rougeL_diff_stderr": 0.865522999231431
+    }
+  },
+  "versions": {
+    "wsc273": 0,
+    "sciq": 0,
+    "truthfulqa_gen": 1,
+    "mnli": 0,
+    "hellaswag": 0,
+    "piqa": 0,
+    "lambada_openai": 0,
+    "triviaqa": 1,
+    "arc_challenge": 0,
+    "logiqa": 0,
+    "arc_easy": 0,
+    "openbookqa": 0,
+    "winogrande": 0,
+    "toxigen": 0
+  },
+  "config": {
+    "model": "hf-causal",
+    "model_args": "pretrained=davidvblumenthal/160M_GPT-Verite",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda:0",
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "results": {
+    "wikitext": {
+      "word_perplexity": 32.44425971489125,
+      "byte_perplexity": 1.9168597372440965,
+      "bits_per_byte": 0.9387447742592119
+    }
+  },
+  "versions": {
+    "wikitext": 1
+  },
+  "config": {
+    "model": "hf-causal",
+    "model_args": "pretrained=davidvblumenthal/GPT-Verite-125M-sc_mask-3x-wiki-prototype",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda:0",
+    "no_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

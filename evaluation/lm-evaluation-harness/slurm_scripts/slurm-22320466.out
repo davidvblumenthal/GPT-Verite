@@ -1,0 +1,71 @@
+~/master_thesis/evaluation/lm-evaluation-harness ~/master_thesis/evaluation/lm-evaluation-harness/slurm_scripts
+Found cached dataset ai2_arc (/home/kit/stud/ukmwn/.cache/huggingface/datasets/ai2_arc/ARC-Challenge/1.0.0/1569c2591ea2683779581d9fb467203d9aa95543bb9b75dcfde5da92529fd7f6)
+Selected Tasks: ['arc_challenge', 'sciq', 'mnli', 'piqa', 'winogrande', 'hellaswag', 'logiqa', 'toxigen', 'truthfulqa_gen', 'wsc273', 'openbookqa', 'arc_easy', 'lambada_openai', 'triviaqa']
+Using device 'cuda:0'
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 595.98it/s]
+Found cached dataset sciq (/home/kit/stud/ukmwn/.cache/huggingface/datasets/sciq/default/0.1.0/50e5c6e3795b55463819d399ec417bfd4c3c621105e00295ddb5f3633d708493)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  4.07it/s]100%|██████████| 3/3 [00:00<00:00, 10.35it/s]
+Found cached dataset glue (/home/kit/stud/ukmwn/.cache/huggingface/datasets/glue/mnli/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:01<00:04,  1.05s/it] 40%|████      | 2/5 [00:01<00:01,  1.95it/s] 60%|██████    | 3/5 [00:01<00:00,  2.82it/s] 80%|████████  | 4/5 [00:01<00:00,  3.84it/s]100%|██████████| 5/5 [00:01<00:00,  3.20it/s]
+Found cached dataset piqa (/home/kit/stud/ukmwn/.cache/huggingface/datasets/piqa/plain_text/1.1.0/6c611c1a9bf220943c4174e117d3b660859665baf1d43156230116185312d011)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  4.34it/s]100%|██████████| 3/3 [00:00<00:00,  9.64it/s]
+Found cached dataset winogrande (/home/kit/stud/ukmwn/.cache/huggingface/datasets/winogrande/winogrande_xl/1.1.0/a826c3d3506aefe0e9e9390dcb53271070536586bab95849876b2c1743df56e2)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  4.34it/s]100%|██████████| 3/3 [00:00<00:00,  7.17it/s]100%|██████████| 3/3 [00:00<00:00,  6.73it/s]
+Found cached dataset hellaswag (/home/kit/stud/ukmwn/.cache/huggingface/datasets/hellaswag/default/0.1.0/512a66dd8b1b1643ab4a48aa4f150d04c91680da6a4096498a5e5f799623d5ae)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  2.48it/s]100%|██████████| 3/3 [00:00<00:00,  4.66it/s]100%|██████████| 3/3 [00:00<00:00,  4.28it/s]
+Found cached dataset logiqa (/home/kit/stud/ukmwn/.cache/huggingface/datasets/logiqa/logiqa/0.0.1/4bf60449574fbe40eccf8b5177e294a179a5c85aeedce3210d359100e91af224)
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  9.67it/s]100%|██████████| 3/3 [00:00<00:00, 19.13it/s]
+Traceback (most recent call last):
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/main.py", line 108, in <module>
+    main()
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/main.py", line 79, in main
+    results = evaluator.simple_evaluate(
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/utils.py", line 182, in _wrapper
+    return fn(*args, **kwargs)
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/evaluator.py", line 81, in simple_evaluate
+    task_dict = lm_eval.tasks.get_task_dict(tasks)
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 344, in get_task_dict
+    task_name_dict = {
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 345, in <dictcomp>
+    task_name: get_task(task_name)()
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/base.py", line 419, in __init__
+    self.download(data_dir, cache_dir, download_mode)
+  File "/pfs/data5/home/kit/stud/ukmwn/master_thesis/evaluation/lm-evaluation-harness/lm_eval/base.py", line 448, in download
+    self.dataset = datasets.load_dataset(
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/datasets/load.py", line 1759, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/datasets/load.py", line 1496, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/datasets/load.py", line 1218, in dataset_module_factory
+    raise e1 from None
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/datasets/load.py", line 1185, in dataset_module_factory
+    raise e
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/datasets/load.py", line 1158, in dataset_module_factory
+    dataset_info = hf_api_dataset_info(
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/datasets/utils/_hf_hub_fixes.py", line 152, in dataset_info
+    return hf_api.dataset_info(repo_id, revision=revision, timeout=timeout, use_auth_token=use_auth_token)
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 120, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/huggingface_hub/hf_api.py", line 1667, in dataset_info
+    hf_raise_for_status(r)
+  File "/home/kit/stud/ukmwn/miniconda3/envs/torch_trans/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 275, in hf_raise_for_status
+    raise GatedRepoError(message, response) from e
+huggingface_hub.utils._errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-648222b1-38c50e017187cfbd12d147d1)
+
+Cannot access gated repo for url https://huggingface.co/api/datasets/skg/toxigen-data.
+Access to dataset skg/toxigen-data is restricted and you are not in the authorized list. Visit https://huggingface.co/datasets/skg/toxigen-data to ask for access.
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n507
+Job ID: 22320466
+Cluster: uc2
+User/Group: ukmwn/stud
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 00:00:19
+CPU Efficiency: 3.06% of 00:10:20 core-walltime
+Job Wall-clock time: 00:01:02
+Memory Utilized: 1.77 GB
+Memory Efficiency: 2.94% of 60.00 GB

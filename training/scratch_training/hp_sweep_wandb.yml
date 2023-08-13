@@ -1,0 +1,49 @@
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - train.py
+  - configs/gpt-verite/ProxyModel.yml
+#  - configs/local_setup.yml
+method: random
+metric:
+  goal: minimize
+  name: train/lm_loss
+
+parameters:
+  mup_init_scale:
+    max: 2
+    min: 0
+  
+  mup_attn_temp:
+    max: 10
+    min: 0
+  
+  mup_embedding_mult:
+    max: 12
+    min: 0
+  
+  mup_output_temp:
+    max: 5
+    min: 0
+  
+  mup_width_scale:
+    max: 5
+    min: 0
+
+  lr:
+    max: 0.001
+    min: 0.0002
+
+  optimizer:
+    parameters:
+      params:
+        parameters:
+          lr:
+            max: 0.001
+            min: 0.0002
+  
+  train-iters:
+    value: 1971
+
+program: deepy.py

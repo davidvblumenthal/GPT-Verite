@@ -1,0 +1,1 @@
+{"entail_ratio": 0.0600375234521576, "false_ratio": 0.6435272045028143, "neutral_ratio": 0.005628517823639775, "off_topic_ratio": 0.29080675422138835, "hallu_ner": 0.3681043129388164, "num_entail": 64, "num_false": 686, "num_neutral": 6, "num_off_topic": 310, "num_correct_mentioned_ne": 630, "num_total_mentioned_ne": 997, "num_sentences": 1066}

@@ -1,0 +1,21 @@
+,category,task,name,num_tokens,ratio,sc_loss,final_tokens,path
+0,General Language Modelling,glm,FreeLaw,60175014061,0.3,yes,18052504218,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_FreeLaw.jsonl
+1,General Language Modelling,glm,pubmed_abstracts,13435572444,0.8,yes,10748457955,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_pubmed_abstracts.jsonl
+2,General Language Modelling,glm,uncorpus,4517446083,1,yes,4517446083,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_uncorpus.jsonl
+3,General Language Modelling,glm,books1,4162449280,0.5,no,2081224640,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_books1.jsonl
+4,General Language Modelling,glm,wikipedia,15108245283,1,yes,15108245283,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_wikipedia.jsonl
+5,General Language Modelling,glm,ted_talks,27233169,1,no,27233169,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_ted_talks.jsonl
+6,General Language Modelling,glm,europarl,334171122,1,yes,334171122,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_europarl.jsonl
+7,General Language Modelling,glm,books3,40742741158,0.5,no,20371370579,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_books3.jsonl
+8,General Language Modelling,glm,uspto,21817418581,0.7,yes,15272193006,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_uspto.jsonl
+9,General Language Modelling,glm,wikiquotes,374968941,1,no,374968941,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/glm_wikiquotes.jsonl
+10,Downstream Task,sum,scitldr_train,76205572,1,no,76205572,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/sum_scitldr_train.jsonl
+11,Downstream Task,sum,big_patent_summary_version_train,23394905454,1,no,23394905454,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/sum_big_patent_summary_version_train.jsonl
+12,Downstream Task,topic,dbpedia14_train,188133552,1,no,188133552,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/topic_dbpedia14_train.jsonl
+13,Downstream Task,topic,ag_news_train,28377303,1,no,28377303,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/topic_ag_news_train.jsonl
+14,Downstream Task,qa,lfqa_train,1142928080,1,no,1142928080,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/qa_lfqa_train.jsonl
+15,Downstream Task,qa,mrqa_train,1204539968,1,no,1204539968,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/qa_mrqa_train.jsonl
+16,Downstream Task,qa,wikihow_qa_version,498019224,1,no,498019224,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/qa_wikihow_qa_version.jsonl
+17,Downstream Task,qa,eli5_category_train,65843382,2,no,65843382,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/qa_eli5_category_train.jsonl
+18,Downstream Task,pp,paws_train,6517919,1,no,6517919,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/pp_paws_train.jsonl
+19,Downstream Task,nli,qnli_train,31817364,1,no,31817364,/pfs/work7/workspace/scratch/ukmwn-les_faits/staging_area/train/nli_qnli_train.jsonl

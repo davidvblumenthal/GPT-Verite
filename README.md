@@ -13,34 +13,42 @@ Here are all the links to the created artefacts such as training dataset, model 
 
 [HuggingFace versions](https://huggingface.co/davidvblumenthal)
 
-## Training related
+## Code
+### Training related
 This part links all code repositories related to training models.
-### Main Training Repository
+#### Main Training Repository
 [Folder in this repository](training/continued_pretraining)
+
 [Link to GitHub repository](https://github.com/davidvblumenthal/gpt-verite_)
 
-### HuggingFace related Trainings
+#### HuggingFace related Trainings
 [Folder in this repository](training/scratch_training)
+
 [Link to GitHub repository](https://github.com/davidvblumenthal/Truthfulness_Study_Hug)
 
-## Dataset Creation
+### Dataset Creation
 [Folder in this repository](dataset/LesFaits)
+
 [Link to GitHub repository](https://github.com/davidvblumenthal/LesFaits)
 
-## Evaluation related
-### FACTUALITYPROMPTS
-#### Generate the continuation to the prompts
+### Evaluation related
+#### FACTUALITYPROMPTS
+##### Generate the continuation to the prompts
 [Folder in this repository](evaluation/generation_evaluation)
+
 [Link to GitHub repository](https://github.com/davidvblumenthal/generation_evaluation)
 
-#### Evaluate the Generations
+##### Evaluate the Generations
 [Folder in this repository](evaluation/FactualityPrompts)
+
 [Link to GitHub repository](https://github.com/davidvblumenthal/FactualityPrompt)
 
-### TruthfulQA and Downstream Task Evaluation
+#### TruthfulQA and Downstream Task Evaluation
 [Folder in this repository](evaluation/lm-evaluation-harness)
+
 [Link to GitHub repository](https://github.com/davidvblumenthal/lm-evaluation-harness)
 
-### Real Toxicity Prompts
+#### Real Toxicity Prompts
 [Folder in this repository](evaluation/toxicity_prompts)
+
 [Link to GitHub repository](https://github.com/davidvblumenthal/toxicity_prompts)

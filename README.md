@@ -5,10 +5,12 @@ This is the main repository of the master thesis: GPT-Vérité - A model for tru
 Here are all the links to the created artefacts such as training dataset, model checkpoints etc.
 ### Data
 [Complete Training Dataset (LesFaits)](https://huggingface.co/datasets/davidvblumenthal/LesFaits)
+
 [Subset used for training](https://doi.org/10.5281/zenodo.8242895)
 
 ### Model Weights
 [Weights including optimizer states](https://doi.org/10.5281/zenodo.8242804)
+
 [HuggingFace versions](https://huggingface.co/davidvblumenthal)
 
 ## Training related
